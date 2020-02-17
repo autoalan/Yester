@@ -1,0 +1,14 @@
+Name: Example Yester Configuration Test
+Describe:
+  Context:
+    - Name: Yester Environment
+      It:  
+        - Name: We should be using the console
+          Left:  (Get-Host).Name
+          Right:  ConsoleHost
+          Operator: -Be
+  It:
+    - Name: 10 should not be greater than 100
+      Left: 10
+      Right: 100
+      Operator: -Not -BeGreaterThan

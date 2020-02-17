@@ -32,4 +32,4 @@ if ($Public) {
     }
 }
 
-Export-ModuleMember -Function $Public.BaseName
+Export-ModuleMember -Function Invoke-Yester

@@ -34,12 +34,12 @@ Describing Example Yester Configuration Test
 ### YAML Specification
 Each YAML file represents ***a single*** Describe block. The Describe and Name keys at the root must be defined.
 
-```yaml
+```
 Name: This is the description for the Describe block
 Describe:
 ```
 Optionally, one or more Context blocks can be defined.
-```yaml
+```
 Name: This is the description for the Describe block
 Describe:
   Context:
@@ -52,7 +52,7 @@ Describe:
 ```
 As you would expect, you can make multiple asserts in a given context. For an assertion, all keys are required.
 
-```yaml
+```
 Name: This is the description for the Describe block
 Describe:
   Context:
@@ -66,7 +66,7 @@ Describe:
 This configuration is the same as the expression `$Left | Should -Not -BeGreater than $Right` or  `10 | Should -Not -BeGreaterThan 100` when expanded.
 
 Of course, expressions are also welcome.
-```yaml
+```
 Name: This is the description for the Describe block
 Describe:
   Context:

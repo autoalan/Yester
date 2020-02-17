@@ -44,8 +44,8 @@ Name: This is the description for the Describe block
 Describe:
   Context:
     - Name: Context Block 1
-	  It:
-	  ...
+      It:
+        ...
     - Name: Context Block 2
       It:
       ...
@@ -57,11 +57,11 @@ Name: This is the description for the Describe block
 Describe:
   Context:
     - Name: Context Block 1
-	  It:
+      It:
         - Name: 10 should not be greater than 100
-	      Left: 10
-	      Right: 100
-	      Operator: -Not -BeGreaterThan
+	  Left: 10
+	  Right: 100
+	  Operator: -Not -BeGreaterThan
 ```
 This configuration is the same as the expression `$Left | Should -Not -BeGreater than $Right` or  `10 | Should -Not -BeGreaterThan 100` when expanded.
 
@@ -71,10 +71,10 @@ Name: This is the description for the Describe block
 Describe:
   Context:
     - Name: Context Block 1
-	  It:
+      It:
         - Name: We should be using the console
-	      Left: (Get-Host).Console
-	      Right: Console
-	      Operator: -Be
+	  Left: (Get-Host).Console
+	  Right: Console
+	  Operator: -Be
 ```
 Finally, Invoke-Expression is used to execute the actual Pester tests. If `Left` or `Right` is evaluated to `$null` by Invoke-Expression, the value is treated as a string.

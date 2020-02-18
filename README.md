@@ -1,8 +1,6 @@
 # Yester
-Yester is a YAML wrapper for Pester. Although Pester is extremely simple to use, it can still be intimidating for those still working to grok PowerShell or a scripting language at large. 
 
-### Motivation
-Okay, yes, YAML can be a bit fussy. However, as an abstraction, it is simple to learn and can be linted easily, which is important to me. My personal motivation for Yester is to drive the adoption of infrastructure testing within my team as well as outside of it. I see Yester as a quick win until everyone decides to level-up and use Pester natively. In the meantime, feedback and pull requests are welcome. :smile:
+Yester is a Pester wrapper for executing tests defined in YAML. The goal of this is project is to enable simple, repeatable tests for infrastructure engineers with little understanding or want to learn PowerShell and Pester. Yester only requires a basic understanding of YAML to compose tests. 
 
 ## Installation
 > Yester depends on  [Pester]([https://github.com/Pester/Pester](https://github.com/Pester/Pester)) and [powershell-yaml]([https://github.com/cloudbase/powershell-yaml](https://github.com/cloudbase/powershell-yaml))
